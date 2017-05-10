@@ -34,6 +34,12 @@ for line in sys.stdin:
     # the result is a tuple with 6 elements
     data = line.strip().split("\t")
 
+    #Change the mapper so that an error is raised when there are not six elements in the tuple
+    try:
+    len(Fields)<6
+    except lessthansixelementsintupple:
+    print "less than six elements in tupple"
+
     # store the 6 elements of the tuple in seperate variables
     date, time, item, payment, sales, category = data
 
