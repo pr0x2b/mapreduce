@@ -22,6 +22,10 @@ import sys
 # Sum of all sales (values) is initialized with zero, we just started
 sum_of_values = 0
 
+# Task 6
+count = 0
+avgerage = 0
+
 # Previous key is initialized with None, we just started
 previous_key = None
 
@@ -60,6 +64,12 @@ for line in sys.stdin:
 
     sum_of_values += 1
     #Changed the reducer in order to calculate the total number (count) of purchases for each category (not the sum of the sales)
+    
+    # Task 6: Change the reducer so that you calculate the average sales per category
+    sum_of_values +=float(value)                                                                                    
+    count += 1 
+    avg = sum_of_values/count
+    
     # the previous key for the next iteration is the current key of the this iteration 
     previous_key = key
 
