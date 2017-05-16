@@ -45,6 +45,9 @@ for line in sys.stdin:
         # to the standart output (stdout)
         # Key and value are seperated by a tab (\t)
         # Line ends with new line (\n)
+        
+        # Task 5 (change the reducer so that only categories are shown that have a total number(count) of more than 114 purchases)
+        if sum_of_values > 114
         sys.stdout.write("{0}\t{1}\n".format(previous_key, sum_of_values))
         # Sum of sales starts again with 0
         sum_of_values = 0
