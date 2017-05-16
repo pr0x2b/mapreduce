@@ -64,4 +64,5 @@ for line in sys.stdin:
     previous_key = key
 
 # write the last result to stdout
+if sum_of_values > 114 :
 sys.stdout.write("{0}\t{1}\n".format(previous_key, sum_of_values))
