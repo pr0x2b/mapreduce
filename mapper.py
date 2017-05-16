@@ -35,10 +35,8 @@ for line in sys.stdin:
     data = line.strip().split("\t")
 
     #Change the mapper so that an error is raised when there are not six elements in the tuple
-    try:
-    len(Fields)<6
-    except lessthansixelementsintupple:
-    print "less than six elements in tupple"
+      if len(data) != 6:
+        raise ValueError('data must contain six tuples')
 
     # store the 6 elements of the tuple in seperate variables
     date, time, item, payment, sales, category = data
