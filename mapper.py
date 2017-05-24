@@ -4,6 +4,8 @@
 # for writing and reading the standard input and output
 import sys
 
+# This is just test purpose
+
 # Example Input data (minipurchase.txt)
 # Input is tabulator (\t) separated
 # New Line (\n) indicates a new record.
